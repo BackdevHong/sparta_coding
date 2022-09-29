@@ -37,13 +37,27 @@
 }
 
 .wrap {
-    width: 1200px;
+    max-width: 1200px;
+    width: 90%;
     margin: 20px auto 0px auto;
 }
 
 .myPost {
-    width: 500px;
+    max-width: 500px;
+    width: 95%;
     margin: 20px auto 0 auto;
     box-shadow: 0px 0px 3px 0px gray;
     padding: 20px;
+}
+
+.buttonGroup{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonGroup > button{
+    margin-right: 10px;
 }
