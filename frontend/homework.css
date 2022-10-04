@@ -1,0 +1,52 @@
+* {
+	font-family: "Gowun Dodum", sans-serif;
+}
+
+.myTitle {
+	height: 250px;
+	width: 100%;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("data:image/jpeg;base64,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");
+	background-position: center;
+	background-size: cover;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.myComment {
+	color: gray;
+}
+
+.wrap {
+	max-width: 500px;
+	width: 90%;
+	margin: 20px auto 0px auto;
+}
+
+.myPost {
+	max-width: 500px;
+	width: 95%;
+	margin: 20px auto 0 auto;
+	box-shadow: 0px 0px 3px 0px gray;
+	padding: 20px;
+}
+
+.buttonGroup {
+	display: flex;
+	margin-top: 20px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonGroup > button {
+	margin-right: 10px;
+}
