@@ -20,12 +20,25 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="homework.css" />
+		<script>
+			$(document).ready(() => {
+				$.ajax({
+					type: "GET",
+					url: "http://spartacodingclub.shop/sparta_api/weather/incheon",
+					data: {},
+					success: response => {
+						$("#temp").html(response["temp"]);
+					},
+				});
+			});
+		</script>
 		<title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
 	</head>
 
 	<body>
 		<div class="myTitle">
 			<h1>아이유 방명록</h1>
+			<p>현재기온 : <span id="temp"></span></p>
 		</div>
 		<div class="myPost">
 			<div class="form-floating mb-3">
@@ -48,7 +61,6 @@
 			</div>
 			<div class="buttonGroup">
 				<button type="button" class="btn btn-dark">기록하기</button>
-				<button type="button" class="btn btn-light">닫기</button>
 			</div>
 		</div>
 		<div class="wrap">
